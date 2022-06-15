@@ -8,9 +8,9 @@ public class view {
 
         do{
             System.out.println("Program to create contactBook");
-            System.out.println("[1]-->Create a new ContactBook");
-            System.out.println("[2]-->Add contact to contactBook");
-            System.out.println("[9]-->Exit");
+            System.out.println("[1]-Create a new ContactBook");
+            System.out.println("[2]-Add contact to contactBook");
+            System.out.println("[9]-Exit");
             decicion=LeerNumer.nextInt();
             if (decicion==1){
                 ContactBook contactBookObj=view.createAContactBook();
@@ -46,10 +46,10 @@ public class view {
         int decision = 0;
         System.out.println("Program to create a list of contact");
         do {
-            System.out.println("[0]-->Exit");
-            System.out.println("[1]-->Create a new contact");
-            System.out.println("[2]-->Delete contact");
-            System.out.println("[3]-->Show contact book");
+            System.out.println("[0]-Exit");
+            System.out.println("[1]-Create a new contact");
+            System.out.println("[2]-Delete contact");
+            System.out.println("[3]-Show contact book");
 
             decision = LeerNumer.nextInt();
             if (decision == 1) {
@@ -58,8 +58,8 @@ public class view {
 
             } else if (decision == 2) {
                 System.out.println("Do you want to delete a contact?");
-                System.out.println("[1]--> Yes");
-                System.out.println("[2]--> No");
+                System.out.println("[1]-Yes");
+                System.out.println("[2]- No");
                 int delOrNotDel= LeerNumer.nextInt();
                 if (delOrNotDel==1) {
                     Contact c=view.deleteContact(contactBookObj);
@@ -89,8 +89,8 @@ public class view {
         System.out.println("Enter your movile:");
         String movilCont = Leer.nextLine();
         System.out.println("Top list");
-        System.out.println("[1]-->True");
-        System.out.println("[2]-->False");
+        System.out.println("[1]-True");
+        System.out.println("[2]-False");
         int decicion=LeerNumer.nextInt();
         if(decicion==1){
             topList=true;
@@ -114,8 +114,8 @@ public class view {
         System.out.print("Enter the phone number of contact:");
         String numerCont=Leer.nextLine();
         System.out.println("Enter the topList of contact:");
-        System.out.println("[1]-->True");
-        System.out.println("[2]-->False");
+        System.out.println("[1]-True");
+        System.out.println("[2]-False");
         int decicion=LeerNumer.nextInt();
         if (decicion==1){
             topListDelCont=true;
