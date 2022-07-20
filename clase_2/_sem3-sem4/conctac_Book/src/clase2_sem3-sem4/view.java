@@ -34,7 +34,7 @@ public class view {
     }
     public static ContactBook createAContactBook(){
         Scanner Leer=new Scanner(System.in);
-        System.out.println("Enter the name of contactBook");
+        System.out.println("---Enter the name of contactBook----");
         String nameContactBook=Leer.nextLine();
         ContactBook libreta=new ContactBook(nameContactBook);
         return libreta;
